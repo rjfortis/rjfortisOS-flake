@@ -86,8 +86,6 @@
         neofetch
         flameshot
         xclip
-
-        gimp
     ];
 
   environment.variables = {
