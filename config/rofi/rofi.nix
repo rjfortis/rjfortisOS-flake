@@ -22,15 +22,24 @@
         in
         {
           "*" = {
-            bg = mkLiteral "#27464f"; # dark blue
-            bg-alt = mkLiteral "#fedbc0"; # light pink
-            foreground = mkLiteral "#fee020"; # yellow
-            selected = mkLiteral "#9FE2BF"; # skyblue celeste
-            active = mkLiteral "#FFBF00"; # orange
-            text-selected = mkLiteral "#873e23"; # brown
-            text-color = mkLiteral "#000000"; # black
-            border-color = mkLiteral "#c2c3c7"; #gray
-            urgent = mkLiteral "#ff004d"; #pink fucsia
+            #bg = mkLiteral "#27464f"; # dark blue
+            #bg-alt = mkLiteral "#fedbc0"; # light pink
+            #foreground = mkLiteral "#fee020"; # yellow
+            #selected = mkLiteral "#9FE2BF"; # skyblue celeste
+            #active = mkLiteral "#FFBF00"; # orange
+            #text-selected = mkLiteral "#873e23"; # brown
+            #text-color = mkLiteral "#000000"; # black
+            #border-color = mkLiteral "#c2c3c7"; #gray
+            #urgent = mkLiteral "#ff004d"; #pink fucsia
+            bg = mkLiteral "#${config.stylix.base16Scheme.base00}";
+            bg-alt = mkLiteral "#${config.stylix.base16Scheme.base09}";
+            foreground = mkLiteral "#${config.stylix.base16Scheme.base01}";
+            selected = mkLiteral "#${config.stylix.base16Scheme.base08}";
+            active = mkLiteral "#${config.stylix.base16Scheme.base0B}";
+            text-selected = mkLiteral "#${config.stylix.base16Scheme.base00}";
+            text-color = mkLiteral "#${config.stylix.base16Scheme.base05}";
+            border-color = mkLiteral "#${config.stylix.base16Scheme.base0F}";
+            urgent = mkLiteral "#${config.stylix.base16Scheme.base0E}";
           };
           "window" = {
             width = mkLiteral "50%";
