@@ -7,6 +7,8 @@
 
     home-manager.url = "github:nix-community/home-manager/release-23.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+
+    stylix.url = "github:danth/stylix";
   };
 
   outputs =
@@ -34,6 +36,7 @@
           };
           modules = [
             ./hosts/${host}/config.nix
+            inputs.stylix.nixosModules.stylix
             home-manager.nixosModules.home-manager
             {
               home-manager.extraSpecialArgs = {
