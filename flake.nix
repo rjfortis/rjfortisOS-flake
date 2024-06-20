@@ -8,15 +8,22 @@
     home-manager.url = "github:nix-community/home-manager/release-23.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
-    stylix.url = "github:danth/stylix";
+    
   };
 
   outputs =
-    { nixpkgs, home-manager, ... }@inputs:
+    inputs@{ nixpkgs, home-manager, ... }:
     let
       system = "x86_64-linux";
       host = "rjfortishost";
       username = "rjfortisdev";
+
+      pkgs = import nixpkgs {
+        inherit system;
+        config = {
+          allowUnfree = true;
+        };
+      };
     in
     {
       nixosConfigurations = {
@@ -29,7 +36,6 @@
           };
           modules = [
             ./hosts/${host}/config.nix
-            inputs.stylix.nixosModules.stylix
             home-manager.nixosModules.home-manager
             {
               home-manager.extraSpecialArgs = {
