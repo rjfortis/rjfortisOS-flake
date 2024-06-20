@@ -17,13 +17,6 @@
       system = "x86_64-linux";
       host = "rjfortishost";
       username = "rjfortisdev";
-
-      pkgs = import nixpkgs {
-        inherit system;
-        config = {
-          allowUnfree = true;
-        };
-      };
     in
     {
       nixosConfigurations = {
