@@ -19,7 +19,11 @@ in
     home.stateVersion = "23.11";
 
     #Import Program Configurations
-    imports = [];
+    imports = [
+        ../../config/rofi/rofi.nix
+        #../../config/rofi/config-emoji.nix
+        ../../config/rofi/config-long.nix
+    ];
 
     home.file.".local/share/fonts" = {
         source = ../../config/fonts;
@@ -37,6 +41,11 @@ in
 
     # Scripts
     # home.packages = [(import ../../scripts/rofi-launcher.nix { inherit pkgs; })];
+
+    # Scripts
+    home.packages = [
+        (import ../../scripts/rofi-launcher.nix { inherit pkgs; })
+    ];
 
     programs = {
         neovim = {
