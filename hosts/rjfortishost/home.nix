@@ -42,6 +42,9 @@ in
         userEmail = "${gitEmail}";
     };
 
+    # Styling Options
+    stylix.targets.rofi.enable = false;
+
     # home.pointerCursor = {};
 
     # Scripts
