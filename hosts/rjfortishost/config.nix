@@ -128,7 +128,7 @@
         unzip
 
         git
-        wezterm
+        #wezterm
 
         rofi
 

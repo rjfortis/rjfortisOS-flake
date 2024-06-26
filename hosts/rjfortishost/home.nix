@@ -60,6 +60,13 @@ in
             enable = true;
             defaultEditor = true;
         };
+        wezterm = {
+            enable = true;
+            enableBashIntegration = true;
+            #extraLuaConfig = ''
+                #${builtins.readFile ./wezterm/wezterm.lua}
+            #'';
+        };
         bash = {
             enable = true;
             enableCompletion = true;
