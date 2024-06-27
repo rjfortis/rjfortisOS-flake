@@ -123,7 +123,7 @@
             background-color = mkLiteral "transparent";
           };
           "button" = {
-            width = mkLiteral "15%";
+            width = mkLiteral "10%";
             padding = mkLiteral "12px";
             border-radius = mkLiteral "12px";
             background-color = mkLiteral "@text-selected";

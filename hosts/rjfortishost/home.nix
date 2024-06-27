@@ -63,9 +63,9 @@ in
         wezterm = {
             enable = true;
             enableBashIntegration = true;
-            #extraLuaConfig = ''
-                #${builtins.readFile ./wezterm/wezterm.lua}
-            #'';
+            extraLuaConfig = ''
+                ${builtins.readFile ./wezterm/wezterm.lua}
+            '';
         };
         bash = {
             enable = true;
