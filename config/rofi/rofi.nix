@@ -42,7 +42,7 @@
             urgent = mkLiteral "#${config.stylix.base16Scheme.base0E}";
           };
           "window" = {
-            width = mkLiteral "50%";
+            width = mkLiteral "70%";
             transparency = "real";
             orientation = mkLiteral "vertical";
             cursor = mkLiteral "default";
