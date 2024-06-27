@@ -7,7 +7,7 @@ in
         wezterm = {
             enable = true;
             enableBashIntegration = true;
-            extraLuaConfig = ''
+            extraConfig = ''
                 ${builtins.readFile ./wezterm/wezterm.lua}
             '';
         };
