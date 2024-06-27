@@ -61,7 +61,7 @@ return {
 	-- 	saturation = 1,
 	-- },
 
-	default_prog = { "tmux", "new-session", "-A", "-s", "Main" },
+	--default_prog = { "tmux", "new-session", "-A", "-s", "Main" },
 
 	-- leader = { key = "a", mods = "CTRL", timeout_milliseconds = 1000 },
 	disable_default_key_bindings = true,
