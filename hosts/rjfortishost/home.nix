@@ -23,6 +23,8 @@ in
         ../../config/rofi/rofi.nix
         #../../config/rofi/config-emoji.nix
         ../../config/rofi/config-long.nix
+
+        ../../config/wezterm.nix
     ];
 
     # Place Files Inside Home Directory
@@ -59,13 +61,6 @@ in
         neovim = {
             enable = true;
             defaultEditor = true;
-        };
-        wezterm = {
-            enable = true;
-            enableBashIntegration = true;
-            extraLuaConfig = ''
-                ${builtins.readFile ./wezterm/wezterm.lua}
-            '';
         };
         bash = {
             enable = true;
