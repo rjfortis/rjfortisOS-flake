@@ -11,8 +11,8 @@ local function font_with_fallback(name, params)
 end
 
 local fonts = {
-    "JetBrainsMono Nerd Font",
-    "VictorMono Nerd Font",
+    "JetBrainsMono Nerd Font Mono",
+    --"VictorMono Nerd Font",
 };
 
 local font = fonts[2]
