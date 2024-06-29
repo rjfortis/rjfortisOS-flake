@@ -4,19 +4,6 @@ wezterm.on("update-right-status", function(window)
 	window:set_right_status(window:active_workspace())
 end)
 
--- A helper function for my fallback fonts
-local function font_with_fallback(name, params)
-	local names = { name, "Noto Color Emoji", "JetBrains Mono" }
-	return wezterm.font_with_fallback(names, params)
-end
-
-local fonts = {
-    "JetBrainsMono Nerd Font Mono",
-    --"VictorMono Nerd Font",
-};
-
-local font = fonts[1]
-
 return {
 	-- General configuration
 	audible_bell = "Disabled",
@@ -31,22 +18,11 @@ return {
 		bottom = 2,
 	},
 
-	-- Font and color scheme
-	font = font_with_fallback(font, { weight = "Bold" }),
-	font_rules = {
-		-- Select a fancy italic font for italic text
-		{
-			italic = true,
-			font = font_with_fallback(font, { weight = "Bold", italic = true }),
-		},
-
-		-- Similarly, a fancy bold+italic font
-		{
-			italic = true,
-			intensity = "Bold",
-			font = font_with_fallback(font, { weight = "ExtraBold", italic = true }),
-		},
-	},
+	font = wezterm.font_with_fallback { 
+		'JetBrainsMono Nerd Font Mono', 
+		'Noto Color Emoji'
+		'JetBrains Mono', 
+	}
 	font_size = 16, -- 13
 	use_resize_increments = true,
 	line_height = 1.0,
