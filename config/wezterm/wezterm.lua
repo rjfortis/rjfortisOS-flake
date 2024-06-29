@@ -22,8 +22,8 @@ return {
 		'JetBrainsMono Nerd Font Mono', 
 		'Noto Color Emoji',
 		'JetBrains Mono', 
-	}
-	font_size = 16, -- 13
+	},
+	font_size = 20, -- 13
 	use_resize_increments = true,
 	line_height = 1.0,
 	-- color_scheme = "Eqie6 (terminal.sexy)",
