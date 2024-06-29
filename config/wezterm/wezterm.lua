@@ -15,7 +15,7 @@ local fonts = {
     --"VictorMono Nerd Font",
 };
 
-local font = fonts[2]
+local font = fonts[1]
 
 return {
 	-- General configuration
