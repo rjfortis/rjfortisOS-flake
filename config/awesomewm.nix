@@ -1,9 +1,6 @@
 {
-  config,
-  pkgs,
-  host,
-  inputs,
-  options,
+  pkgs, 
+  inputs, 
   ...
 }:
 {
