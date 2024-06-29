@@ -8,7 +8,7 @@
     xserver = {
       windowManager.awesome = {
         enable = true;
-        extraConfig = ''
+        extraLuaConfig = ''
           ${builtins.readFile ./awesomewm/awesomewm.lua}
         '';
       };
