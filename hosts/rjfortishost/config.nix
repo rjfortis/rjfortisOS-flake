@@ -12,6 +12,7 @@
   imports = [
     ./hardware.nix
     ./users.nix
+    ../../config/awesomewm.nix
   ];
 
   # Bootloader.
