@@ -20,7 +20,7 @@ return {
 
 	font = wezterm.font_with_fallback { 
 		'JetBrainsMono Nerd Font Mono', 
-		'Noto Color Emoji'
+		'Noto Color Emoji',
 		'JetBrains Mono', 
 	}
 	font_size = 16, -- 13
