@@ -1,15 +1,15 @@
 { pkgs, inputs, ... }:
 let
-    inherit (import ./variables.nix);
+  inherit (import ./variables.nix);
 in
 {
-    programs = {
-        wezterm = {
-            enable = true;
-            enableBashIntegration = true;
-            extraConfig = ''
-                ${builtins.readFile ./wezterm/wezterm.lua}
-            '';
-        };
+  programs = {
+    wezterm = {
+      enable = true;
+      enableBashIntegration = true;
+      extraConfig = ''
+      ${builtins.readFile ./wezterm/wezterm.lua}
+      '';
     };
+  };
 }
