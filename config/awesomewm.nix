@@ -3,13 +3,14 @@ let
   inherit (import ./variables.nix);
 in
 {
-  programs = {
-    wezterm = {
-      enable = true;
-      enableBashIntegration = true;
-      extraConfig = ''
-      ${builtins.readFile ./awesomewm/awesomewm.lua}
-      '';
+  services = {
+    xserver = {
+      windowManager.awesome = {
+        enable = true;
+        extraConfig = ''
+        ${builtins.readFile ./awesomewm/awesomewm.lua}
+        '';
+      };
     };
   };
 }

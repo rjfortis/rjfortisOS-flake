@@ -20,6 +20,7 @@ in
 
     #Import Program Configurations
     imports = [
+        ../../config/awesomewm.nix
         ../../config/rofi/rofi.nix
         #../../config/rofi/config-emoji.nix
         ../../config/rofi/config-long.nix

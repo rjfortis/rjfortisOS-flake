@@ -154,9 +154,7 @@
             layout = "us";
             variant = "";
         };
-        windowManager.awesome = {
-            enable = true;
-        };
+        #windowManager.awesome = {enable = true;};
     };
     #avahi = {enable = true;nssmdns4 = true;openFirewall = true;};
     pipewire = {
