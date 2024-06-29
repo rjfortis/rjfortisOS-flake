@@ -1,7 +1,11 @@
-{ pkgs, inputs, ... }:
-let
-  inherit (import ./variables.nix);
-in
+{
+  config,
+  pkgs,
+  host,
+  inputs,
+  options,
+  ...
+}:
 {
   services = {
     xserver = {

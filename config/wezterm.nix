@@ -1,7 +1,8 @@
-{ pkgs, inputs, ... }:
-let
-  inherit (import ./variables.nix);
-in
+{ 
+  pkgs, 
+  inputs, 
+  ... 
+}:
 {
   programs = {
     wezterm = {
